@@ -4,12 +4,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from funciones import resumen
+from graficas import histograma
 
 #%load_ext autoreload
 #%autoreload 2
 # %%
 x = np.random.normal(loc=50, scale=3, size=1000)
-plt.hist(x, edgecolor="w", color="red")
+
+#%%
+histograma(x)
 
 # %%
 resumen(x)
